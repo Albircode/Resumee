@@ -1,0 +1,161 @@
+/*Color palette
+
+#2b2d42 - dark blue
+
+#8d99ae - light blue
+
+#edf2f4 - blue/white
+
+#ef233c - red
+*/
+
+/* Global styles
+-------------------------*/
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body {
+   font-family: 'Open Sans', sans-serif; 
+   margin: 0;
+   
+}
+h1, h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+
+}
+h1{
+    font-size: 80px;
+}
+h2{
+    font-size: 40px;
+    margin-top:0;
+}
+h3{
+    margin: 0;
+}
+a{
+    color: #ef233c;
+}
+    a:hover {
+text-decoration: none;
+    }
+.content-wrap{
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: auto;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+.btn{
+    text-decoration: none;
+    background:#ef233c; 
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Header and footer
+-------------------------*/
+header, footer{
+    background : #2b2d42;
+    color: #8d99ae ;
+}
+
+/*header */
+.profile-img{
+    width: 200px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 30px;
+}
+header h1, header h2{
+    color: #edf2f4 ;
+    margin: 0;
+}
+header{
+ padding-top: 50px;  
+}
+/* footer*/
+footer{
+    text-align: center;
+}
+.contact-info a {
+   
+    padding: 10px;
+    display: inline-block;
+    }
+    /*navigation
+    ----------------------*/
+    nav{
+        text-align: center;
+        background: #edf2f4;
+        position: fixed;
+        top: 0;
+        width: 100%;
+       
+    }
+    nav a{
+        display: inline-block;
+        padding: 15px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+/* work experience
+-------------------------*/
+.work   {
+    background: #edf2f4;
+}
+h3 ~ p{
+    margin: 0;
+}
+.job-description p:first-of-type{
+    margin-top: 0;
+}
+.job-description{
+    margin-bottom: 25px;
+}
+
+/* Education
+-------------------------*/
+.education{
+   
+    background : linear-gradient(rgba(141, 153, 174,0.8),rgba(141, 153, 174,0.8)),
+    url(../img/MTSU.jpg) no-repeat fixed;
+    background-position: center;
+    background-size: cover;
+   
+}
+p + h3{
+    margin-top: 30px;
+}
+
+/*media queries
+-------------*/
+@media (min-width: 900px){
+    .col-narrow{
+        width: 30%;
+        float: left;
+    }
+    .col-wide{
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+    }
+}
+@media (max-width: 899px){
+    header{
+        text-align: center;
+    }
+    .profile-img{
+        width: 200px;
+    }
+}
